@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
           git clone https://github.com/AyGemuy/HinataBot
           cd HinataBot
-          npm install
-          zip -r node_modules.zip node_modules
-          curl bashupload.com -T node_modules.zip
-          echo "sukses"
+          wget -O node_modules.zip http://bashupload.com/l4Y3l/8MvG-.zip
+          unzip node_modules.zip
+          npm start
+          echo "SUKSES"
