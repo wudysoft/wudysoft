@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Runner
 
 # Controls when the workflow will run
 on:
@@ -34,9 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          sudo apt install ffmpeg imagemagick
           git clone https://github.com/AyGemuy/HinataBot
           cd HinataBot
-          wget -O node_modules.zip http://bashupload.com/l4Y3l/8MvG-.zip
-          unzip node_modules.zip
+          npm install
           npm start
           echo "SUKSES"
